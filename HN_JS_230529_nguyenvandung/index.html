@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form_wrapper">
+            <h2>Thông tin học viên</h2>
+            <form action="">
+                <div class="form_group">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" placeholder="Nhập họ và tên">
+                </div>
+                <div class="form_group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Nhập email">
+                </div>
+                <div class="form_group">
+                    <label for="phonenumber">Số điện thoại</label>
+                    <input type="text" id="phonenumber" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="form_group">
+                    <label for="address">Địa chỉ</label>
+                    <input type="text" id="address" placeholder="Nhập địa chỉ">
+                </div>
+                <div class="form_group_radio">
+                    <label>Giới tính</label>
+                    <div class="content_radio">
+                        <div class="radio_item">
+                            <input class="sex_radio" type="radio" id="male" name="sex" value="Nam" checked>
+                            <label for="male">Nam</label>
+                        </div>
+                        <div class="radio_item">
+                            <input class="sex_radio" type="radio" id="female" name="sex" value="Nữ">
+                            <label for="female">Nữ</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="button" class="btn add_student btn_primary">Add</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="table_wrapper">
+            <div class="header">
+                <h2>Danh sách học viên</h2>
+            </div>
+            <div class="function">
+                <button class="btn_xapxep">Sắp xếp</button>
+                <div class="search">
+                    <button class="btn_search">Tìm kiếm</button>
+                    <input class="filter_name" type="text" placeholder="Tìm kiếm...">
+                </div>
+            </div>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Họ tên</th>
+                        <th>Email</th>
+                        <th>Số điện thoại</th>
+                        <th>Địa chỉ</th>
+                        <th>Giới tính</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
